@@ -32,7 +32,7 @@
         right: 1rem;
         width: 2rem;
         height: 2rem;
-        margin: ;
+        margin: #fff 2px solid;
         border-radius: 50%;
     }
     .overlay>figure {
@@ -41,6 +41,6 @@
         /* White border of 2px */
     }
     .overlay>figure>img {
-        /* Max width 100% for responsive image */
+        
         /* Height auto for keeping the ratio */
     }
