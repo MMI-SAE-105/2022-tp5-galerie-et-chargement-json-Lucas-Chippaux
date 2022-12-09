@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
     <link rel="stylesheet" href="main.css">
-    <script src='main.js'></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
+
 <body x-data="{
     affChat: 'https://www.cdiscount.com/pdt2/1/9/0/1/700x700/vol7548757113190/rw/costumes-halloween-chien-chat-petit-vetements-cosp.jpg',
-              }">
+}">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
-<div class="overlay">
-    @click="affimg = null"
-    @keyup.escape.window="affimg = null">
-    <figure><img :src="affChat" alt="image Chat"></figure>
-</div>
-    
+    <div class="overlay"
+    x-show="affChat"
+    @click="affChat = null"
+    @keyup.escape.window="affChat = null">
+        <figure><img :src="affChat" alt="image chat"></figure>
+    </div>
 </body>
 </html>
