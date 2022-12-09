@@ -26,14 +26,14 @@
         font-family: sans-serif;
         text-align: center;
         line-height: 2rem;
-        /* Display as a block */
-        /* Position absolute */
+        display: block;
+        position: absolute;
         top: 1rem;
         right: 1rem;
         width: 2rem;
         height: 2rem;
         margin: ;
-        /* Rounded border */
+        border-radius: 50%;
     }
     .overlay>figure {
         margin: 0;
