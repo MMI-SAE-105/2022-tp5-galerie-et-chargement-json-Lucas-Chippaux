@@ -7,6 +7,32 @@
     <title>Json</title>
 </head>
 <body>
-    
+    <h1>JSON</h1>
+<ul x-data="{
+    data: [
+        {
+            nom: 'Lucas',
+            projet: 'discover-e',
+            url: 'https://discover-e.lucaschippaux.fr/fr/'
+        },
+        {
+            nom: 'Gaspard',
+            projet: 'Back-to-back',
+            url: 'https://back-to-back.gaspardbondy.fr/'
+        },
+        {
+            nom: 'Timéo',
+            projet: 'reversefootage',
+            url: 'http://reversefootage.timeobinda.fr/'
+        }
+    ],
+}">
+<template x-for="obj of data">
+    <li>
+        <span x-text="obj.nom">nom</span> : 
+        <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
+    </li>
+    </ul>
+</template> 
 </body>
 </html>
